@@ -46,7 +46,7 @@ export default function Toolbar() {
                                 key={item.id}
                                 animate={{
                                     opacity: !hoveredItem || hoveredItem === item.id ? 1 : 0.3,
-                                    filter: hoveredItem && hoveredItem !== item.id ? "blur(2px)" : "blur(0px)",
+                                    filter: hoveredItem && hoveredItem !== item.id ? "blur(4px)" : "blur(0px)",
                                 }}
                                 className={`${item.color} px-4 py-1.5 rounded-xl text-white font-medium`}
                                 style={{
@@ -115,7 +115,7 @@ export default function Toolbar() {
                                 key={item.id}
                                 animate={{
                                     opacity: !hoveredItem || hoveredItem === item.id ? 1 : 0.3,
-                                    filter: hoveredItem && hoveredItem !== item.id ? "blur(2px)" : "blur(0px)",
+                                    filter: hoveredItem && hoveredItem !== item.id ? "blur(4px)" : "blur(0px)",
                                 }}
                                 className={`${item.color} px-4 py-1.5 rounded-xl text-white font-medium`}
                                 style={{
