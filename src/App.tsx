@@ -96,7 +96,11 @@ export default function Toolbar() {
                     {items.map((item, index) => (
                         <button
                             key={item.id}
-                            ref={(el) => (buttonsRef.current[index] = el)}
+                            ref={(el) => {
+                                if (buttonsRef.current) {
+                                    buttonsRef.current[index] = el
+                                }
+                            }}
                             className="relative py-2 px-3 text-white"
                             onMouseEnter={() => setHoveredItem(item.id)}
                             onMouseLeave={() => setHoveredItem(null)}
